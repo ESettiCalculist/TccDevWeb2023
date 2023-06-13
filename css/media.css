@@ -1,0 +1,185 @@
+.menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 780px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    background-position: top;
+    height: 220px;
+  }
+  .menu {
+    background: none;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 205px;
+    align-items: flex-end;
+    margin: 0;
+  }
+
+  .menu a {
+    font-size: 12px;
+    color: var(--preto);
+    background-color: var(--cor-botaomenu);
+    font-family: var(--fonte-primaria);
+    padding: 7px;
+    border-radius: 8px;
+    margin: 3px;
+  }
+
+  .menu a:hover {
+    background-color: var(--roxo);
+    border: 1px solid #000;
+  }
+
+  .menu__titulo {
+    padding: 4em 4em;
+    width: 10%;
+  }
+
+  #container {
+    width: 24em;
+    align-self: center;
+  }
+
+  #header {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .toggle {
+    margin-left: 70px;
+  }
+
+  #calendar {
+    margin: 0 0.5rem;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  #calendar div {
+    width: 2.45rem;
+    height: 4rem;
+    justify-content: center;
+  }
+
+  #weekdays {
+    margin: 2px;
+  }
+
+  #weekdays div {
+    font-size: 12px;
+    padding: 1px;
+  }
+
+  #modalBackDrop {
+    height: 150vh;
+  }
+
+  .day {
+    padding: 2px;
+    box-sizing: unset;
+  }
+
+  .day .event {
+    font-size: 10px;
+    padding: 2px;
+    background-color: var(--event-color);
+  }
+
+  #newEventModal,
+  #deleteEventModal {
+    width: 80%;
+  }
+
+  .rodape {
+    padding: 1em;
+    gap: 7px;
+  }
+
+  .rodape-esquerdo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contato {
+    gap: 7px;
+    font-size: 12px;
+  }
+
+  .img-telefone-rodape {
+    display: none;
+  }
+
+  .rodape__links2 {
+    border: none;
+    gap: 4px;
+  }
+  .rodape__links2 img {
+    width: 40%;
+    margin-left: 1em;
+  }
+
+  .rodape__links2:hover {
+    background: none;
+    color: var(--roxo);
+  }
+
+  .btn-rodape {
+    width: 9em;
+  }
+
+  .botoes {
+    gap: 10px;
+    width: 85%;
+  }
+
+  .botoes img{
+    display: none;
+  }
+
+  .parceiros {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .parceiros a{
+    text-align: center;
+    width: 90%;
+    margin-bottom: 2px;
+  }
+
+  .parceiros img {
+    display: none;
+  }
+  
+  .link-parceiros {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    width: 90%;
+  }
+
+  .copyr {
+    margin-top: 0;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 1440px) {
+  .rodape__links2 {
+    width: 35%;
+  }
+
+  .copyr {
+    margin-top: 2em;
+  }
+}

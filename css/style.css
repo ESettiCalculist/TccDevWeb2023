@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+@import url("./banner.css");
+@import url("./carousel.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* cores calendario */
+  --body-color: #f1f1f1;
+  --header-color: #d36c6c;
+  --header-button: #92a1d1;
+  --color-weekdays: #247ba0;
+  --box-shadow: #80c43c;
+  --hover: #bf88fd;
+  --current-day: rgb(152, 240, 240);
+  --event-color: #8dcafc;
+  --modal-event: #e8f4fa;
+  --color-day: white;
+  /* cores body */
+  --amarelo: #ffc756;
+  --cor-botaomenu: #bdb9b9;
+  --preto: #000;
+  --roxo: rgb(104, 10, 141);
+  /*fontes*/
+  --fonte-primaria: 'Roboto', sans-serif;
+  --fonte-secundaria: "Fjalla One", sans-serif;
+}
+
+body {
+  background: var(--body-color);
+  font-family: var(--fonte-primaria);
+  height: 100vh;
+}
+
+header {
+  background-image: url(../assets/logocasadecultura.png);
+  background-position: initial;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.menu {
+  background: var(--color-day);
+  font-family: var(--fonte-secundaria);
+  font-size: 16px;
+  height: 258px;
+  padding: 0 1.5rem;
+  white-space: nowrap;
+  margin-left: 450px;
+}
+
+.menu__titulo {
+  padding: 6rem 2rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.menu__item a {
+  font-size: 24px;
+  transition: 0.5s;
+  color: var(--preto);
+  text-decoration: none;
+  background-color: var(--cor-botaomenu);
+  padding: 0.6em;
+  border-radius: 24px;
+}
+
+.menu__item a:hover {
+  color: var(--amarelo);
+  background-color: var(--roxo);
+  border: 1px solid var(--preto);
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  background-color: var(--body-color);
+  width: 100%;
+}
+button {
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+#header {
+  padding: 10px;
+  color: var(--header-color);
+  font-size: 26px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+#header button {
+  background-color: var(--header-button);
+}
+#adminBotao {
+  display: none;
+}
+#container {
+  width: 49rem;
+}
+#monthDisplay {
+  text-transform: uppercase;
+  align-self: center;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: var(--color-weekdays);
+}
+#weekdays div {
+  width: 100px;
+  padding: 10px;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: var(--color-day);
+  margin: 5px;
+  box-shadow: 0px 0px 3px var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15%;
+}
+.day:hover {
+  background-color: var(--hover);
+}
+
+.day + #currentDay {
+  background-color: var(--current-day);
+}
+.event {
+  font-size: 16px;
+  padding: 3px;
+  background-color: var(--event-color);
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+.padding {
+  cursor: default !important;
+  background-color: var(--body-color) !important;
+  box-shadow: none !important;
+}
+#newEventModal,
+#deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: var(--modal-event);
+  box-shadow: 0px 0px 5px black;
+  border-radius: 5px;
+  width: 55%;
+  top: 100px;
+  /* left: calc(50% - 175px); */
+  position: absolute;
+  font-family: sans-serif;
+}
+#eventTitleInput,
+#eventTextInput,
+#eventText,
+#eventHorarioInput,
+#eventImageInput {
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton,
+#deleteButton {
+  background-color: var(--header-color);
+}
+#saveButton,
+#closeButton {
+  background-color: var(--header-button);
+}
+#eventText {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  text-align: center;
+}
+
+#eventText h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#eventText h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#eventText p{
+  font-size: 16px;
+  }
+  #eventText img{
+    align-self: center;
+    }
+
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 150vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#eventText img {
+  width: 80%;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  background-color: var(--cor-botaomenu);
+  padding: 1em 2em .5em 2em;
+  margin-top: 2em;
+}
+
+.rodape h2{
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 300;
+  color: #000;
+}
+
+.rodape-esquerdo, .rodape-direito{
+  width: 50%;
+}
+
+.rodape-esquerdo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.telefone {
+  display: flex;
+  gap: 10px;
+}
+
+.img-telefone-rodape{
+  width: 5%;
+}
+.rodape-direito img{
+  width: 40%;
+}
+
+.rodape__links2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #000;
+  text-decoration: none;
+  width: 40%;
+  text-align: center;
+  border-radius: 8px;
+  font-size: .85rem;
+  padding: 10px;
+  color: #247ba0;
+}
+
+.rodape__links2:hover {
+  background-color: var(--roxo);
+  color: var(--amarelo);
+  transition: 0.5s;
+}
+
+.rodape__links2 img{
+  width: 20%;
+}
+
+.endereco {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.endereco img{
+  width: 20%;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.botoes img{
+  width: 62%;
+}
+
+.btn-rodape {
+  background-color: #272727;
+  width: 70%;
+}
+
+.btn-rodape:hover {
+  background-color: var(--roxo);
+  color: var(--amarelo);
+  transition: 0.5s;
+}
+
+.parceiros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.parceiros h2{
+  grid-column: 1/-1;
+  margin-bottom: 0;
+}
+
+.parceiros a {
+  width: 30%;
+  color: var(--color-weekdays);
+}
+
+.parceiros a:hover {
+  color: var(--roxo);
+  transition: 0.3s;
+}
+
+.parceiros img {
+  width: 100%;
+  height: 70%;
+}
+
+.link-parceiros {
+  display: none;
+}
+
+.copyr {
+  margin-top: 2em;
+  font-size: 13px;
+  font-family: var(--fonte-primaria);
+  font-weight: 300;
+  text-align:justify;
+}
