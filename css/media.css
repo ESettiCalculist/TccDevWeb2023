@@ -99,6 +99,17 @@
     width: 80%;
   }
 
+  .newsLetter {
+    height: 12.5rem;
+    justify-content: center;
+    gap: .5rem;
+  }
+
+  .inputNewsLetter {
+    width: 250px;
+    align-self: center;
+  }
+
   .rodape {
     padding: 1em;
     gap: 7px;
@@ -141,7 +152,7 @@
     width: 85%;
   }
 
-  .botoes img{
+  .botoes img {
     display: none;
   }
 
@@ -150,7 +161,7 @@
     flex-direction: column;
   }
 
-  .parceiros a{
+  .parceiros a {
     text-align: center;
     width: 90%;
     margin-bottom: 2px;
@@ -159,7 +170,7 @@
   .parceiros img {
     display: none;
   }
-  
+
   .link-parceiros {
     display: block;
     text-decoration: none;
@@ -171,7 +182,6 @@
     margin-top: 0;
     text-align: center;
   }
-
 }
 
 @media (max-width: 1440px) {

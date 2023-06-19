@@ -46,7 +46,7 @@ header {
   background: var(--color-day);
   font-family: var(--fonte-secundaria);
   font-size: 16px;
-  height: 258px;
+  height: 250px;
   padding: 0 1.5rem;
   white-space: nowrap;
   margin-left: 450px;
@@ -83,6 +83,10 @@ li {
   justify-content: center;
   background-color: var(--body-color);
   width: 100%;
+}
+
+.card-body {
+  display: grid;
 }
 button {
   width: 75px;
@@ -242,6 +246,12 @@ button {
 
 #eventText img {
   width: 80%;
+}
+
+.newsLetter {
+  height: 9.5rem;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .rodape {

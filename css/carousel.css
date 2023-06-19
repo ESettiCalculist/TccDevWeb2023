@@ -25,12 +25,18 @@
   border-radius: 0;
 }
 
-.card p{
+.card p {
   font-size: 1rem;
 }
+
+.card a {
+  align-self: center;
+}
+
 .carousel-inner {
   overflow: visible;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
   background-color: #272727;
@@ -73,6 +79,5 @@
 
   .card a{
     font-size: 12px;
-    padding: .3em;
   }
 }
