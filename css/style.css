@@ -171,6 +171,22 @@ button {
   background-color: var(--body-color) !important;
   box-shadow: none !important;
 }
+
+
+dialog {
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+  left:calc(15% - 150px)
+}
+
+dialog::backdrop {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh
+}
+
+
 #newEventModal,
 #deleteEventModal {
   display: none;
