@@ -14,6 +14,4 @@ const cancelButton = document.getElementById("closeWindow").addEventListener("cl
     inputNewsLetter.value =""
   })
 
-inputNewsLetter.addEventListener("submit", () =>
-inputNewsLetter.value = ""
-)
+  
