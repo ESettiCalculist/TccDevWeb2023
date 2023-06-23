@@ -124,6 +124,13 @@
     width: 80%;
   }
 
+  .modalCalendarUsuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
   .newsLetter {
     height: 12.5rem;
     justify-content: center;

@@ -25,7 +25,7 @@
     <nav>
       <img src="./assets/matheusLogo.gif" alt="" class="logo">
       <ul class="menu">
-        
+
         <li class="menu__item"><a href="./index.html">Home</a></li>
         <li class="menu__item"><a href="./calendar.html">Calendario de eventos</a></li>
         <li class="menu__item"><a href="#">Projetos</a></li>
@@ -37,94 +37,97 @@
   </header>
   <main>
     <section class="principal">
-    <div id="container">
-      <div id="header">
-        <div id="monthDisplay"></div>
-        <!-- dark mode -->
+      <div id="container">
+        <div id="header">
+          <div id="monthDisplay"></div>
+          <!-- dark mode -->
 
-        <div class="toggle">
-          <input id="switch" type="checkbox" name="theme">
-          <label for="switch">Dark Mode</label>
+          <div class="toggle">
+            <input id="switch" type="checkbox" name="theme">
+            <label for="switch">Dark Mode</label>
+          </div>
+
+          <div id="botoes-bn" class="col-6">
+            <button id="backButton">Voltar</button>
+            <button id="nextButton">Próximo</button>
+          </div>
+          <div class="col-4">
+            <button id="adminBotao" style="background-color: rgb(104, 10, 141);">Admin</button>
+          </div>
+        </div>
+        <div id="weekdays">
+          <div>Domingo</div>
+          <div>Segunda-feira</div>
+          <div>Terça-feira</div>
+          <div>Quarta-feira</div>
+          <div>Quinta-feira</div>
+          <div>Sexta-feira</div>
+          <div>Sábado</div>
         </div>
 
-        <div id="botoes-bn" class="col-6">
-          <button id="backButton">Voltar</button>
-          <button id="nextButton">Próximo</button>
-        </div>
-        <div class="col-4">
-          <button id="adminBotao" style="background-color: rgb(104, 10, 141);">Admin</button>
+        <!-- div dinamic -->
+        <div id="calendar"></div>
+
+
+      </div>
+
+      <div id="newEventModal">
+        <div class="modalCalendarUsuario">
+          <h2>Não temos evento neste dia</h2>
+
+          <!-- <input id="eventTitleInput" placeholder="Event Title"/> -->
+
+          <!-- <button id="saveButton"> Salvar</button> -->
+          <button id="cancelButton">Fechar</button>
         </div>
       </div>
-      <div id="weekdays">
-        <div>Domingo</div>
-        <div>Segunda-feira</div>
-        <div>Terça-feira</div>
-        <div>Quarta-feira</div>
-        <div>Quinta-feira</div>
-        <div>Sexta-feira</div>
-        <div>Sábado</div>
+
+      <div id="deleteEventModal">
+        <h2>Evento</h2>
+
+        <div id="eventText">
+        </div><br>
+
+
+        <button id="closeButton">Fechar</button>
       </div>
 
-      <!-- div dinamic -->
-      <div id="calendar"></div>
-
-
-    </div>
-
-    <div id="newEventModal">
-      <h2>Não temos evento neste dia</h2>
-
-      <!-- <input id="eventTitleInput" placeholder="Event Title"/> -->
-
-      <!-- <button id="saveButton"> Salvar</button> -->
-      <button id="cancelButton">Fechar</button>
-    </div>
-
-    <div id="deleteEventModal">
-      <h2>Evento</h2>
-
-      <div id="eventText">
-      </div><br>
-
-
-      <button id="closeButton">Fechar</button>
-    </div>
-
-    <div id="modalBackDrop"></div>
-  </section>
+      <div id="modalBackDrop"></div>
+    </section>
   </main>
   <footer class="rodape">
     <section class="rodape-esquerdo">
       <div class="contato">
         <h2>Contato:</h2>
         <div class="telefone">
-        <img src="./assets/telefone.png" alt="" class="img-telefone-rodape">
-        <h2>(11) 2614-7352</h2>
-      </div>
+          <img src="./assets/telefone.png" alt="" class="img-telefone-rodape">
+          <h2>(11) 2614-7352</h2>
+        </div>
         <h2 class="roodape__links__subtitulo">Acesse nossas redes:</h2>
         <a class="rodape__links2" href=""><img src="./assets/facebook.png" alt="Facebook">Facebook</a>
         <a class="rodape__links2" href=""><img src="./assets/instagram.png" alt="Instagram">Instagram</a>
-      <h2>Avenida Paranaguá, 1633, São Paulo, SP, Brazil</h2>
-    </div>
-    <div class="botoes">
-          <button class="btn-rodape">Doações</button>
-          <button class="btn-rodape">Sobre nós</button>
+        <h2>Avenida Paranaguá, 1633, São Paulo, SP, Brazil</h2>
+      </div>
+      <div class="botoes">
+        <button class="btn-rodape">Doações</button>
+        <button class="btn-rodape">Sobre nós</button>
         <img src="./assets/logocasadecultura.png" alt="">
       </div>
     </section>
     <section class="rodape-direito">
       <div class="parceiros">
         <h2>Parceiros:</h2>
-        <a href="#" ><img src="./assets/mcem.webp" alt=""></a>
-        <a href="#" ><img src="./assets/spcultura.png" alt=""></a>
-        <a href="#" ><img src="./assets/slam.webp" alt=""></a>
-        <a href="#" ><img src="./assets/fczl.webp" alt=""></a>
+        <a href="#"><img src="./assets/mcem.webp" alt=""></a>
+        <a href="#"><img src="./assets/spcultura.png" alt=""></a>
+        <a href="#"><img src="./assets/slam.webp" alt=""></a>
+        <a href="#"><img src="./assets/fczl.webp" alt=""></a>
         <a href="#" class="link-parceiros">Movimento Cultural Ermelino Matarazzo</a>
         <a href="#" class="link-parceiros">Slam Guilhermina</a>
         <a href="#" class="link-parceiros">Forum de cultura Zona Leste</a>
         <a href="#" class="link-parceiros">Cidade de São Paulo Cultura</a>
       </div>
-      <p class="copyr">© Copyright 2023 Todos direitos reservados Erick Setti, Abraão Pereira, Giovana Lima, João Carlos, Hellen Fernandes.</p>
+      <p class="copyr">© Copyright 2023 Todos direitos reservados Erick Setti, Abraão Pereira, Giovana Lima, João
+        Carlos, Hellen Fernandes.</p>
     </section>
   </footer>
   <script src="scripts/darkMode.js"></script>
