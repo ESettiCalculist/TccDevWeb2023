@@ -10,16 +10,21 @@
     width: 100%;
   }
 
+  ol,
+  ul {
+    padding-left: 0;
+  }
+
   header {
     background-position: top;
     height: 220px;
   }
 
-  header img{
+  header img {
     align-self: center;
     width: 23rem;
     height: 17rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   nav {
@@ -55,7 +60,7 @@
     width: 10%;
   }
 
-  .banner{
+  .banner {
     margin-top: 3em;
   }
 
@@ -65,7 +70,7 @@
   }
 
   #header {
-    margin-top: 1em;
+    margin-top: 4em;
     display: flex;
     justify-content: center;
     font-size: 14px;
