@@ -1,0 +1,59 @@
+@import url("./media.css");
+
+.cardSite {
+    background-image: url('');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.imgem {
+    height: 60%;
+    width: 30%;
+    padding: inherit;
+}
+
+iframe{
+    margin-top: 25px;
+    width: 710px;
+    height: 200px;        
+}
+
+.card1 {
+    margin-top: 5px;
+    padding: 2rem;
+    display: flex;
+    background: #e2e8e9;
+    color: rgb(62, 5, 136);
+}
+
+.card2 {
+    margin-top: 5px;
+    padding: 2rem;
+    display: flex;
+    background: #e2e8e9;
+    color: rgb(62, 5, 136);
+}
+
+.card2 img {
+    flex-direction: row-reverse;
+    order: 2;
+}
+
+
+.text-div {
+    padding: inherit;
+}
+
+.text-div h3{
+    padding: inherit;
+}
+
+.text-div p{
+    padding: inherit;
+}
