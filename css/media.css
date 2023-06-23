@@ -14,13 +14,25 @@
     background-position: top;
     height: 220px;
   }
+
+  header img{
+    align-self: center;
+    width: 23rem;
+    height: 17rem;
+    margin-bottom: .5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .menu {
     background: none;
     flex-wrap: nowrap;
     justify-content: center;
     height: 205px;
     align-items: flex-end;
-    margin: 0;
   }
 
   .menu a {
@@ -41,6 +53,10 @@
   .menu__titulo {
     padding: 4em 4em;
     width: 10%;
+  }
+
+  .banner{
+    margin-top: 3em;
   }
 
   #container {

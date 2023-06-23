@@ -9,8 +9,8 @@ newsLetter.addEventListener("submit", () => {
 })
 
 const cancelButton = document.getElementById("closeWindow").addEventListener("click", () => {
-    dialog.style.display = "none"
-    dialog.close()
+    // dialog.style.display = "none"
+    // dialog.close()
     inputNewsLetter.value =""
   })
 
