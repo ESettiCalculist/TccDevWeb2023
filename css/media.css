@@ -129,7 +129,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}
+  }
 
   .newsLetter {
     height: 12.5rem;
@@ -235,7 +235,7 @@
     gap: 10px;
     margin-top: 5px;
   }
-  
+
   .card2 img {
     width: 50%;
     height: 50%;
@@ -243,7 +243,7 @@
     align-self: center;
     order: 0;
   }
-  
+
   .card2 p {
     margin-bottom: 0;
     font-size: 14px;
@@ -251,6 +251,22 @@
 
   .cardSite {
     margin-top: 40px;
+  }
+
+  .containerCadastrado {
+    width: 22rem;
+    margin-top: 3rem;
+    gap: 20px;
+  }
+
+  .containerCadastrado img {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .containerCadastrado h2{
+    font-size: 18px;
+    margin-top: 10px;
   }
 }
 

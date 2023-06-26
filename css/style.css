@@ -2,6 +2,7 @@
 @import url("./banner.css");
 @import url("./carousel.css");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -204,7 +205,6 @@ dialog::backdrop {
   box-shadow: 0px 0px 5px black;
   border-radius: 5px;
   width: 55%;
-  height: 20%;
   top: 100px;
   /* left: calc(50% - 175px); */
   position: absolute;
