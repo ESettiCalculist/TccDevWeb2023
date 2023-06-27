@@ -187,7 +187,8 @@ dialog {
   height: 10rem;
   justify-content: center;
   align-items: center;
-  left:calc(15% - 150px)
+  left:calc(15% - 150px);
+  top: 250px;
 }
 
 dialog::backdrop {
@@ -205,7 +206,6 @@ dialog::backdrop {
   box-shadow: 0px 0px 5px black;
   border-radius: 5px;
   width: 55%;
-  top: 100px;
   /* left: calc(50% - 175px); */
   position: absolute;
   font-family: sans-serif;

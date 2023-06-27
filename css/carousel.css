@@ -9,17 +9,19 @@
 .cards-wrapper {
   display: flex;
   justify-content: center;
-  height: 28rem;
+  height: 40rem;
 }
+
 .card img {
   align-self: center;
   width: 55%;
   height: 50%;
   padding-top: .5em;
 }
+
 .card {
   
-  margin: 0.5em 10.5em;
+  margin: 0.5em 4.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
   border-radius: 0;

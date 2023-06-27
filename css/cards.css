@@ -52,8 +52,33 @@ iframe{
 
 .text-div h3{
     padding: inherit;
+    text-align: center;
 }
 
 .text-div p{
     padding: inherit;
+    font-size: 18px;
+}
+
+@media (max-width: 780px) {
+    .card1 {
+        padding: 0.2rem;
+    }
+
+    .text-div p{
+        padding: 0;
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .card2 {
+        padding: 0.2rem;
+    }
+
+    .text-div p{
+        padding: 0;
+        text-align: justify;
+    }
+
+    
 }
