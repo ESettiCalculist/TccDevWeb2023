@@ -1,12 +1,13 @@
 const html = document.querySelector('html')
 const checkbox = document.querySelector("input[name=theme]")
 
+// pega as propriedades de estilo da pagina
 const getStyle = (element, style) => 
     window
         .getComputedStyle(element)
         .getPropertyValue(style)
 
-
+// obtem os valores das cores da pagina original
 const initialColors = {
   bodyColor: getStyle(html, '--body-color'),
   headerColor: getStyle(html, '--header-color'),
@@ -22,6 +23,7 @@ const initialColors = {
   
 }
 
+// cores do dark mode
 const darkMode = {
   bodyColor:'#282a36',
   headerColor: '#ff5555',
@@ -37,7 +39,7 @@ const darkMode = {
 const transformKey = key => 
     "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
 
-
+// altera as cores da pagina
 const changeColors = (colors) => {
     Object.keys(colors).map(key => {
         html.style.setProperty(transformKey(key), colors[key]) 
@@ -47,8 +49,7 @@ const changeColors = (colors) => {
     console.log(colors)
 }
 
-
-
+// evento do botao para alterar a cord pagina
 checkbox.addEventListener("change", ({target}) => {
     target.checked ? changeColors(darkMode) : changeColors(initialColors)
 })

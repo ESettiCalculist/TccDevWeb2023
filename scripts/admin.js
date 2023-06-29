@@ -11,11 +11,14 @@ const eventTitleInput = document.getElementById('eventTitleInput')
 const eventHorarioInput = document.getElementById('eventHorarioInput')
 const eventTextInput = document.getElementById('eventTextInput')
 
-// --------
-const calendar = document.getElementById('calendar'); // div calendar:
+// calendario
+const calendar = document.getElementById('calendar');
+// lista de dias da semana
 const weekdays = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado']; //array with weekdays:
 
 //funções
+
+// funçaõ de abrir o modal
 function openModal(date) {
   clicked = date
   const eventDay = events.find((event) => event.date === clicked)
@@ -48,13 +51,13 @@ function openModal(date) {
 
   backDrop.style.display = 'block'
 }
-//função load() será chamada quando a pagina carregar:
 
+//mudar titulo do mês:
 function load() {
   const date = new Date()
 
 
-  //mudar titulo do mês:
+  
   if (nav !== 0) {
     date.setMonth(new Date().getMonth() + nav)
   }
@@ -125,6 +128,7 @@ function load() {
   }
 }
 
+// funçao para fechar o modal
 function closeModal() {
   eventTitleInput.classList.remove('error')
   eventHorarioInput.classList.remove('error')
@@ -139,6 +143,7 @@ function closeModal() {
   clicked = null
   load()
 }
+// salvar os eventos
 function saveEvent() {
   if (eventTitleInput.value, eventHorarioInput.value, eventTextInput.value) {
     eventTitleInput.classList.remove('error')
@@ -163,6 +168,7 @@ function saveEvent() {
   }
 }
 
+// deletear o evento
 function deleteEvent() {
 
   events = events.filter(event => event.date !== clicked)

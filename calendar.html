@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- scripts -->
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
@@ -13,40 +14,39 @@
   <link href="./css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/media.css">
   <link href="./css/darkMode.css" rel="stylesheet">
-
   <title>Calendario</title>
 </head>
-
-
-<!-- -------- -->
-
 <body>
   <header>
+    <!-- menu navegaçao -->
     <nav>
+      <!-- logo -->
       <img src="./assets/matheusLogo.gif" alt="" class="logo">
       <ul class="menu">
-
+        <!-- links da navegaçao -->
         <li class="menu__item"><a href="./index.html">Home</a></li>
         <li class="menu__item"><a href="./calendar.html">Calendario de eventos</a></li>
-        <li class="menu__item"><a href="#">Projetos</a></li>
+        <li class="menu__item"><a href="./projetos.html">Projetos</a></li>
         <li class="menu__item"><a
             href="https://www.google.com.br/maps/dir//Ocupa%C3%A7%C3%A3o+Cultural+Mateus+Santos+-+Av.+Paranagu%C3%A1,+1633+-+Jardim+Belem,+S%C3%A3o+Paulo+-+SP,+03809-170/@-23.491889,-46.4816658,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce6054e0602e8d:0x81cbf7d812cfaf8a!2m2!1d-46.4790277!2d-23.4918807"
             target="_blank">Como Chegar</a></li>
       </ul>
     </nav>
   </header>
+  <!-- corpo da pagina -->
   <main>
     <section class="principal">
       <div id="container">
+        <!-- cabeçalho do calendario -->
         <div id="header">
+
           <div id="monthDisplay"></div>
           <!-- dark mode -->
-
           <div class="toggle">
             <input id="switch" type="checkbox" name="theme">
             <label for="switch">Dark Mode</label>
           </div>
-
+          <!-- botoes de avançar -->
           <div id="botoes-bn" class="col-6">
             <button id="backButton">Voltar</button>
             <button id="nextButton">Próximo</button>
@@ -55,6 +55,7 @@
             <button id="adminBotao" style="background-color: rgb(104, 10, 141);">Admin</button>
           </div>
         </div>
+        <!-- dias da semana -->
         <div id="weekdays">
           <div>Domingo</div>
           <div>Segunda-feira</div>
@@ -64,39 +65,34 @@
           <div>Sexta-feira</div>
           <div>Sábado</div>
         </div>
-
-        <!-- div dinamic -->
+        <!-- calendario -->
         <div id="calendar"></div>
-
-
       </div>
-
+      <!-- modal -->
       <div id="newEventModal">
+        <!-- modal para dia sem evento -->
         <div class="modalCalendarUsuario">
           <h2>Não temos evento neste dia</h2>
-
-          <!-- <input id="eventTitleInput" placeholder="Event Title"/> -->
-
-          <!-- <button id="saveButton"> Salvar</button> -->
+          <!-- botao para fechar o modal -->
           <button id="cancelButton">Fechar</button>
         </div>
       </div>
-
+      <!-- modal para dia com evento -->
       <div id="deleteEventModal">
         <h2>Evento</h2>
-
         <div id="eventText">
         </div><br>
-
-
+        <!-- botao para fechar o modal -->
         <button id="closeButton">Fechar</button>
       </div>
-
+      <!-- fundo do modal -->
       <div id="modalBackDrop"></div>
     </section>
   </main>
+  <!-- rodape -->
   <footer class="rodape">
     <section class="rodape-esquerdo">
+      <!-- contato -->
       <div class="contato">
         <h2>Contato:</h2>
         <div class="telefone">
@@ -108,13 +104,14 @@
         <a class="rodape__links2" href=""><img src="./assets/instagram.png" alt="Instagram">Instagram</a>
         <h2>Avenida Paranaguá, 1633, São Paulo, SP, Brazil</h2>
       </div>
+      <!-- botoes doaçoes e sobrenos -->
       <div class="botoes">
         <button class="btn-rodape">Doações</button>
-        <button class="btn-rodape">Sobre nós</button>
-        <img src="./assets/logocasadecultura.png" alt="">
+        <button class="btn-rodape" onclick="paginaSobreNos()">Sobre nós</button>
       </div>
     </section>
     <section class="rodape-direito">
+      <!-- parceiros -->
       <div class="parceiros">
         <h2>Parceiros:</h2>
         <a href="#"><img src="./assets/mcem.webp" alt=""></a>
@@ -126,14 +123,17 @@
         <a href="#" class="link-parceiros">Forum de cultura Zona Leste</a>
         <a href="#" class="link-parceiros">Cidade de São Paulo Cultura</a>
       </div>
+      <!-- copyright -->
       <p class="copyr">© Copyright 2023 Todos direitos reservados Erick Setti, Abraão Pereira, Giovana Lima, João
         Carlos, Hellen Fernandes.</p>
     </section>
   </footer>
+  <!-- scripts injetados -->
   <script src="scripts/darkMode.js"></script>
   <script src="./scripts/mainCalendar.js"></script>
   <script>window.rwbp = { email: 'ericksettidossantos@hotmail.com', phone: '5511972283699', message: 'Digite seus dados e será encaminhado para a conversa no WhatsApp', lang: 'pt-BR' }</script>
   <script defer async src='https://duz4dqsaqembt.cloudfront.net/client/whats.js'></script>
+  <script src="./scripts/controller/sobreNos.js"></script>
 </body>
 
 </html>

@@ -17,7 +17,7 @@ function openModal(date){
   const eventDay = events.find((event)=>event.date === clicked)
   const apresentaEvento = document.getElementById('eventText')
   apresentaEvento.innerHTML = ''
-
+// dia com evento
   if (eventDay) {
     const titulo = document.createElement('h2');
     titulo.textContent = eventDay.title;
@@ -38,11 +38,13 @@ function openModal(date){
    deleteEventModal.style.display = 'block'
 
 
-  } else{
+  } 
+  // dia sem evento
+  else {
     newEvent.style.display = 'block'
 
   }
-
+  
   backDrop.style.display = 'block'
 }
 
@@ -121,7 +123,6 @@ function buttons (){
   document.getElementById('backButton').addEventListener('click', ()=>{
     nav--
     load()
-    
   })
   document.getElementById('nextButton').addEventListener('click',()=>{
     nav++
@@ -136,7 +137,6 @@ function buttons (){
       closeModal();
     }
   })
-  
 }
 buttons()
 load()

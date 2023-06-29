@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- scripts -->
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
@@ -20,10 +21,12 @@
 
 <body>
   <header>
+    <!-- menu navegaçao -->
     <nav>
+      <!-- logo -->
       <img src="./assets/matheusLogo.gif" alt="" class="logo">
       <ul class="menu">
-
+        <!-- links da navegação -->
         <li class="menu__item"><a href="./index.html">Home</a></li>
         <li class="menu__item"><a href="./calendar.html">Calendario de eventos</a></li>
         <li class="menu__item"><a href="#">Projetos</a></li>
@@ -33,9 +36,10 @@
       </ul>
     </nav>
   </header>
+  <!-- corpo da pagina -->
   <main class="cardSite">
+    <!-- cards -->
     <section class="card1">
-
       <img class="imgem" src="./assets/oficinaDeViolao.png" alt="" />
       <div class="text-div">
         <h3>A Casa de Cultura</h3>
@@ -49,7 +53,6 @@
     </section>
     <section class="card2">
       <img class="imgem" src="./assets/oficinaDeAlimentos.png" alt="" />
-
       <div class="text-div">
         <h3>Movimento Cultural</h3>
         <p>Na Casa de Cultura do Movimento Cultural Ernani Matarazzo, a arte é celebrada em todas as suas
@@ -98,7 +101,6 @@
         </p>
       </div>
     </section>
-
     <section class="card2">
       <img class="imgem" src="./assets/oficinaDeViolao.png" alt="" />
       <div class="text-div">
@@ -111,8 +113,10 @@
       </div>
     </section>
   </main>
+  <!-- rodape -->
   <footer class="rodape">
     <section class="rodape-esquerdo">
+      <!-- contato -->
       <div class="contato">
         <h2>Contato:</h2>
         <div class="telefone">
@@ -124,13 +128,14 @@
         <a class="rodape__links2" href=""><img src="./assets/instagram.png" alt="Instagram">Instagram</a>
         <h2>Avenida Paranaguá, 1633, São Paulo, SP, Brazil</h2>
       </div>
+      <!-- botoes de doaçoes e sobrenos-->
       <div class="botoes">
         <button class="btn-rodape">Doações</button>
         <button class="btn-rodape sobreNos" onclick="paginaSobreNos()">Sobre nós</button>
-        <img src="./assets/logocasadecultura.png" alt="">
       </div>
     </section>
     <section class="rodape-direito">
+      <!-- parceiros -->
       <div class="parceiros">
         <h2>Parceiros:</h2>
         <a href="#"><img src="./assets/mcem.webp" alt=""></a>
@@ -142,16 +147,19 @@
         <a href="#" class="link-parceiros">Forum de cultura Zona Leste</a>
         <a href="#" class="link-parceiros">Cidade de São Paulo Cultura</a>
       </div>
+      <!-- copyrights -->
       <p class="copyr">© Copyright 2023 Todos direitos reservados Erick Setti, Abraão Pereira, Giovana Lima, João
-        Carlos, Hellen Fernandes.</p>
+        Carlos.</p>
     </section>
   </footer>
+  <!-- scripts injetados -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <script src="./scripts/controller/newsLetter.js"></script>
   <script>window.rwbp = { email: 'ericksettidossantos@hotmail.com', phone: '5511972283699', message: 'Digite seus dados e será encaminhado para a conversa no WhatsApp', lang: 'pt-BR' }</script>
   <script defer async src='https://duz4dqsaqembt.cloudfront.net/client/whats.js'></script>
+  <script src="./scripts/controller/sobreNos.js"></script>
 </body>
 
 </html>

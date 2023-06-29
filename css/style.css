@@ -370,6 +370,8 @@ dialog::backdrop {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  width: 80%;
+  justify-content: space-evenly;
 }
 
 .botoes img{
