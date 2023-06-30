@@ -1,9 +1,17 @@
+@import url('./style.css');
+
 .carrossel-card {
   width: 100%;
 }
 
 .titulo-carrossel {
   font-size: 24px;
+  color: var(--cor-secundaria);
+}
+
+.titulo-doacoes {
+  font-size: 24px;
+  color: var(--cor-secundaria);
 }
 
 .cards-wrapper {
@@ -24,7 +32,7 @@
   margin: 0.5em 4.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
-  border-radius: 0;
+  border-radius: 20;
 }
 
 .card p {

@@ -9,7 +9,9 @@
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    align-items: center;
+    margin-top: 3.5em;
 }
 
 .imgem {
@@ -25,29 +27,51 @@ iframe{
 }
 
 .card1 {
-    margin-top: 5px;
-    padding: 2rem;
+    width: 85%;
+    margin-bottom: 1em;
+    padding: 1.5rem;
     display: flex;
-    background: #e2e8e9;
-    color: rgb(62, 5, 136);
+    background: #7858fa;
+    color: #d2e1dc;
+    border-radius: 25px;
+    box-shadow: 0px 2px 20px 2px #3a3939;
+}
+
+.card1:hover {
+    transition: 1.6s;
+    background: var(--roxo);
+    color: var(--amarelo);
+    border: 1px solid #000;
+}
+
+.card2:hover {
+    transition: 1.6s;
+    background: var(--roxo);
+    color: var(--amarelo);
+    border: 1px solid #000;
 }
 
 .card2 {
-    margin-top: 5px;
-    padding: 2rem;
+    width: 85%;
+    margin-bottom: 1em;
+    padding: 1.5rem;
     display: flex;
-    background: #e2e8e9;
-    color: rgb(62, 5, 136);
+    background: #9176ff;
+    color: #cdf1e5;
+    border-radius: 25px;
+    box-shadow: 0px 2px 20px 2px #3a3939;
 }
 
 .card2 img {
     flex-direction: row-reverse;
     order: 2;
+    align-self: center;
 }
 
 
 .text-div {
     padding: inherit;
+    /* color: var(--cor-secundaria); */
 }
 
 .text-div h3{
@@ -63,6 +87,7 @@ iframe{
 @media (max-width: 780px) {
     .card1 {
         padding: 0.2rem;
+        box-shadow: 0px 3px 20px 0px #3a3939;
     }
 
     .text-div p{
@@ -73,6 +98,7 @@ iframe{
 
     .card2 {
         padding: 0.2rem;
+        box-shadow: 0px 3px 20px 0px #3a3939;
     }
 
     .text-div p{

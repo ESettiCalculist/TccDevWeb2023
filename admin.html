@@ -5,29 +5,26 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <!-- arquivos style -->
   <link href="./css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/media.css">
   <link href="./css/darkMode.css" rel="stylesheet">
-
   <title>Calendario</title>
 </head>
 <!-- dark mode -->
-
 <div class="toggle">
   <input id="switch" type="checkbox" name="theme">
   <label for="switch">Toggle</label>
 </div>
 
-<!-- -------- -->
-
 <body>
   <header>
+    <!-- navegaçao menu -->
     <nav>
+      <!-- logo -->
       <img src="./assets/matheusLogo.gif" alt="" class="logo">
       <ul class="menu">
-
+        <!-- links da navegaçao -->
         <li class="menu__item"><a href="./index.html">Home</a></li>
         <li class="menu__item"><a href="./calendar.html">Calendario de eventos</a></li>
         <li class="menu__item"><a href="#">Projetos</a></li>
@@ -38,17 +35,15 @@
     </nav>
   </header>
   <section class="principal">
+    <!-- cabrçalho calendario -->
     <div id="container">
       <div id="header">
         <div id="monthDisplay"></div>
-
         <div>
           <button id="backButton">Voltar</button>
           <button id="nextButton">Próximo</button>
         </div>
-
       </div>
-
       <div id="weekdays">
         <div>Domingo</div>
         <div>Segunda-feira</div>
@@ -58,17 +53,12 @@
         <div>Sexta-feira</div>
         <div>Sábado</div>
       </div>
-
-
-      <!-- div dinamic -->
+      <!-- calendario -->
       <div id="calendar"></div>
-
-
     </div>
-
+    <!-- modal para criaçao do evento -->
     <div id="newEventModal">
       <h2>Novo Evento</h2>
-
       <input id="eventTitleInput" placeholder="Titulo do Evento" />
       <input id="eventHorarioInput" placeholder="horario" />
       <input id="eventTextInput" placeholder="Texto do evento" />
@@ -77,22 +67,21 @@
       <button id="saveButton"> Salvar</button>
       <button id="cancelButton">Cancelar</button>
     </div>
-
+    <!-- deletar o evento -->
     <div id="deleteEventModal">
       <h2>Evento</h2>
-
       <div id="eventText">
       </div><br>
-
-
       <button id="deleteButton">Deletar</button>
       <button id="closeButton">Fechar</button>
     </div>
-
+    <!-- fundo do modal -->
     <div id="modalBackDrop"></div>
   </section>
+  <!-- rodape -->
   <footer class="rodape">
     <section class="rodape-esquerdo">
+      <!-- contato -->
       <div class="contato">
         <h2>Contato:</h2>
         <div class="telefone">
@@ -104,12 +93,14 @@
         <a class="rodape__links2" href=""><img src="./assets/instagram.png" alt="Instagram">Instagram</a>
         <h2>Avenida Paranaguá, 1633, São Paulo, SP, Brazil</h2>
       </div>
+      <!-- botoes doações e sobrenos -->
       <div class="botoes">
         <button class="btn-rodape">Doações</button>
         <button class="btn-rodape sobreNos" onclick="paginaSobreNos()">Sobre nós</button>
       </div>
     </section>
     <section class="rodape-direito">
+      <!-- parceiros -->
       <div class="parceiros">
         <h2>Parceiros:</h2>
         <a href="#"><img src="./assets/mcem.webp" alt=""></a>
@@ -121,8 +112,9 @@
         <a href="#" class="link-parceiros">Forum de cultura Zona Leste</a>
         <a href="#" class="link-parceiros">Cidade de São Paulo Cultura</a>
       </div>
+      <!-- copyrights -->
       <p class="copyr">© Copyright 2023 Todos direitos reservados Erick Setti, Abraão Pereira, Giovana Lima, João
-        Carlos, Hellen Fernandes.</p>
+        Carlos.</p>
     </section>
   </footer>
   <script src="scripts/darkMode.js"></script>
