@@ -7,8 +7,8 @@ let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('e
 const newEvent = document.getElementById('newEventModal')
 const deleteEventModal = document.getElementById('deleteEventModal')
 const backDrop = document.getElementById('modalBackDrop')
-// --------
-const calendar = document.getElementById('calendar') // div calendar:
+// calendario
+const calendar = document.getElementById('calendar')
 const weekdays = ['domingo','segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'] //array with weekdays:
 
 //funções de abrir o modal e suas funcionalidades

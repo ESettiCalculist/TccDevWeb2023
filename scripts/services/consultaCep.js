@@ -1,3 +1,4 @@
+// conexao com api Viacep
 async function buscaEndereco(cep) {
     var mensagemErro = document.getElementById('erro')
     mensagemErro.innerHTML = ""
@@ -26,13 +27,15 @@ async function buscaEndereco(cep) {
     
 }
 
+// funçao para ir para o formulario de cadastro
 function openFormularioCadastrado() {
     window.location.href = 'formularioCadastrado.html'
 }
-
+// le o cep
 var cep = document.getElementById('cep')
 cep.addEventListener("focusout", () => buscaEndereco(cep.value))
 
+// abrir o formulario de cadastro
 const formulario = document.getElementById('form').addEventListener("submit", (event) => {
     event.preventDefault()
     openFormularioCadastrado()
