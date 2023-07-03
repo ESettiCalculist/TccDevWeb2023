@@ -20,10 +20,11 @@
   --modal-event: #e8f4fa;
   --color-day: white;
   /* cores body */
-  --body-color: #d2e1dc;
-  --cor-secundaria:#7858fa;
+  --body-color: #d6e0e0;
+  --cor-secundaria:#2f5bea;
   --amarelo: #ffc756;
-  --cor-botaomenu: #bdb9b9;
+  --cor-botaomenu:#bdb9b9;
+  --cor-rodape: #bdb9b9;
   --preto: #000;
   --roxo: rgb(104, 10, 141);
   /*fontes*/
@@ -46,12 +47,13 @@ header {
 
 header img{
   width: 21rem;
-  height: 21rem;
+  height: 13rem;
 }
 
 nav {
   width: 100%;
   display: flex;
+  height: 11rem;
 }
 
 .menu {
@@ -59,8 +61,9 @@ nav {
   font-family: var(--fonte-secundaria);
   font-size: 16px;
   width: 100%;
-  height: 21rem;
   white-space: nowrap;
+  margin-top: 2.5em;
+  align-items: center;
 }
 
 .menu__titulo {
@@ -287,13 +290,15 @@ dialog::backdrop {
   height: 9.5rem;
   justify-content: center;
   gap: 1rem;
+  background-color: var(--cor-secundaria);
+  color: var(--body-color);
 }
 
 .rodape {
   display: flex;
   justify-content: space-between;
   gap: 25px;
-  background-color: var(--cor-botaomenu);
+  background-color: var(--cor-rodape);
   padding: 1em 2em .5em 2em;
   margin-top: 2em;
 }
