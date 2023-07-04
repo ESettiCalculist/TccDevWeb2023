@@ -1,7 +1,6 @@
 .menu {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 20px;
 }
 
 @media (max-width: 780px) {
@@ -30,12 +29,9 @@
   }
 
   .menu {
-    background: none;
-    flex-wrap: nowrap;
     justify-content: center;
-    height: 205px;
-    align-items: flex-end;
     margin-top: 0;
+    gap: 2px;
   }
 
   .menu a {
