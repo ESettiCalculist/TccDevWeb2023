@@ -115,7 +115,7 @@ function closeModal(){
 }
 
 function openAdmin() {
-  window.location.href = 'file:///C:/Users/ERICK/Documents/WORKSPACE/arquivos%20soltos/tcc/calendario2/Calendario/admin.html'
+  window.location.href = 'admin.html'
 }
 
 // funções para os botões 

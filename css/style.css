@@ -125,7 +125,7 @@ button {
   background-color: var(--header-button);
 }
 #adminBotao {
-  display: none;
+  display: block;
 }
 #container {
   width: 49rem;

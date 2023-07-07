@@ -11,11 +11,6 @@
   <link href="./css/darkMode.css" rel="stylesheet">
   <title>Calendario</title>
 </head>
-<!-- dark mode -->
-<div class="toggle">
-  <input id="switch" type="checkbox" name="theme">
-  <label for="switch">Toggle</label>
-</div>
 
 <body>
   <header>
@@ -35,9 +30,14 @@
     </nav>
   </header>
   <section class="principal">
-    <!-- cabrçalho calendario -->
+    <!-- cabeçalho calendario -->
     <div id="container">
       <div id="header">
+        <!-- dark mode -->
+        <div class="toggle">
+          <input id="switch" type="checkbox" name="theme">
+          <label for="switch">Toggle</label>
+        </div>
         <div id="monthDisplay"></div>
         <div>
           <button id="backButton">Voltar</button>
