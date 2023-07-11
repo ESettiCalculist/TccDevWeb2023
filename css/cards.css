@@ -38,20 +38,6 @@ iframe{
     box-shadow: 0px 2px 20px 2px #3a3939;
 }
 
-.card1:hover {
-    transition: 1.6s;
-    background: var(--roxo);
-    color: var(--amarelo);
-    border: 1px solid #000;
-}
-
-.card2:hover {
-    transition: 1.6s;
-    background: var(--roxo);
-    color: var(--amarelo);
-    border: 1px solid #000;
-}
-
 .card2 {
     width: 85%;
     margin-bottom: 1em;
@@ -82,7 +68,7 @@ iframe{
 
 .text-div p{
     padding: inherit;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 @media (max-width: 780px) {
